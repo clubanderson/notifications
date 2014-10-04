@@ -8,7 +8,7 @@ class notifyme::params {
 
   case $::osfamily {
     'RedHat': {
-      notify { "hello world": }
+      $text = "hello world"
     }
     'Suse': {
       notify { "hello world": }

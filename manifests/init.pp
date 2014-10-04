@@ -7,9 +7,10 @@ class notifyme (
   validate_string($method)
 
   anchor { 'notifyme::begin': } ->
-  class { '::notifyme::install': } ->
-  class { '::notifyme::config': } ~>
-  class { '::notifyme::service': } ->
+  notify { '$text': } ->
+#  class { '::notifyme::install': } ->
+#  class { '::notifyme::config': } ~>
+#  class { '::notifyme::service': } ->
   anchor { 'notifyme::end': }
 
 }
