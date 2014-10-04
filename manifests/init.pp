@@ -1,6 +1,6 @@
 class notifyme (
-  $text        = $ntp::params::autoupdate,
-  $method            = $ntp::params::config,
+  $text        = $notifyme::params::text,
+  $method      = $notifyme::params::method,
 ) inherits notifyme::params {
 
   validate_string($text)
