@@ -1,0 +1,4 @@
+notifications
+=============
+
+testing puppet notifications
