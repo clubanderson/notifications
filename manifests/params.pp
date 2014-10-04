@@ -4,7 +4,7 @@ class notifyme::params {
 #  $method   = 'email'
 #  $method   = 'console'
   $method   = 'wall'
-  }
+
 
   case $::osfamily {
     'RedHat': {
